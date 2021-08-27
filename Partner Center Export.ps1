@@ -2,7 +2,7 @@
 if ( ! ( Get-Module MSOnline) ) {
     # Check if the MSOnline PowerShell module is installed.
     if ( Get-Module -ListAvailable -Name MSOnline ) {
-        Write-Host -ForegroundColor Green "Loading the Azure AD PowerShell module..."
+        Write-Host -ForegroundColor Green "Loading the MSOnline PowerShell module..."
         Import-Module MsOnline
     } else {
         Install-Module MsOnline
